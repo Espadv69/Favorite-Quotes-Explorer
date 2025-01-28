@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
+import '../css/Quotes.css'
+
 const Quotes = () => {
   const [quotes, setQuotes] = useState([
     {
@@ -23,13 +25,13 @@ const Quotes = () => {
   }
 
   return (
-    <div>
+    <div className="quotes">
       <h1>Favorite Quotes</h1>
 
       <ul>
         {quotes.map((quote) => (
           <li key={quote.id}>
-            <Link to={`/quotes/${quote.id}`}>{quote.text}</Link>
+            <Link className='a-links' to={`/quotes/${quote.id}`}>{quote.text}</Link>
           </li>
         ))}
       </ul>
