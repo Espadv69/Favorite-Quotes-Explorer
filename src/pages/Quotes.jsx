@@ -37,6 +37,7 @@ const Quotes = () => {
       <div>
         <h2>Add a New Quote</h2>
         <textarea
+          id="quoteInput"
           value={newQuote}
           onChange={(e) => setNewQuote(e.target.value)}
           placeholder="Type your quote here..."
