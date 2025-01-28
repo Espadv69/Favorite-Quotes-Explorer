@@ -7,7 +7,7 @@ import About from './pages/About'
 
 const App = () => {
   return (
-    <div>
+    <div className="components">
       <nav>
         <Link to="/">Home</Link>
         <Link to="/quotes">Quotes</Link>
