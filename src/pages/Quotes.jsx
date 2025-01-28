@@ -21,6 +21,30 @@ const Quotes = () => {
       setNewQuote('')
     }
   }
+
+  return (
+    <div>
+      <h1>Favorite Quotes</h1>
+
+      <ul>
+        {quotes.map((quote) => (
+          <li key={quote.id}>
+            <Link to={`/quotes/${quote.id}`}>{quote.text}</Link>
+          </li>
+        ))}
+      </ul>
+
+      <div>
+        <h2>Add a New Quote</h2>
+        <textarea
+          value={newQuote}
+          onChange={(e) => setNewQuote(e.target.value)}
+          placeholder="Type your quote here..."
+        />
+        <button onClick={addQuote}>Add Quote</button>
+      </div>
+    </div>
+  )
 }
 
 export default Quotes
