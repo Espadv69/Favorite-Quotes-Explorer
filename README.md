@@ -1,8 +1,19 @@
-# React + Vite
+# Favorite Quotes Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app to explore, add, and view your favorite quotes. This project is designed to help you practice navigation and dynamic routing using **React Router DOM**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- **Home Page**: Welcome users to the app.
+- **Quotes Page**: View a list of favorite quotes and add new ones.
+- **Quote Details**: See detailed information about a selected quote.
+- **404 Page**: Handles routes that don't exist.
+- **Dynamic Routing**: Each quote has its own unique page using React Router.
+
+---
+
+## 🛠️ Technologies Used
+- **React**: Frontend library.
+- **React Router DOM**: For navigation and routing.
+- **Vite**: For development and building the project.
