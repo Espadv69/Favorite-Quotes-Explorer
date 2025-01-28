@@ -24,8 +24,31 @@ body {
     'Helvetica Neue',
     sans-serif;
 
-  min-height: 100dvh;
-
   color: whitesmoke;
   background: #121212;
+  overflow-y: hidden;
+}
+
+.components {
+  margin: .5rem auto;
+
+  width: 100%;
+  max-width: 450px;
+}
+
+.navbar-components {
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  border-radius: 10px;
+
+  background: #ffffff27;
+}
+
+.a-links {
+  color: white;
+  text-decoration: none;
 }
