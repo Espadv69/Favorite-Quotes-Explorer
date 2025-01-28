@@ -13,6 +13,14 @@ const Quotes = () => {
     },
   ])
   const [newQuote, setNewQuote] = useState('')
+
+  const addQuote = () => {
+    if (newQuote.trim()) {
+      const newId = quotes.length + 1
+      setQuotes([...quotes, { id: newId, text: newQuote }])
+      setNewQuote('')
+    }
+  }
 }
 
 export default Quotes
