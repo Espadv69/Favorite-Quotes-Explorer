@@ -8,10 +8,10 @@ import About from './pages/About'
 const App = () => {
   return (
     <div className="components">
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/quotes">Quotes</Link>
-        <Link to="/about">About</Link>
+      <nav className="navbar-components">
+        <Link className='a-links' to="/">Home</Link>
+        <Link className='a-links' to="/quotes">Quotes</Link>
+        <Link className='a-links' to="/about">About</Link>
       </nav>
 
       {/* Routes configuration */}
